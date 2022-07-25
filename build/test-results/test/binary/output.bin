@@ -1,0 +1,327 @@
+ë18:43:41.219 [Test worker] INFO  com.intuit.karate.Suite - backed up existing 'build\karate-reports' dir to: build\karate-reports_1658447021203
+_18:43:41.235 [Test worker] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+¶18:43:42.939 [pool-1-thread-1] INFO  c.intuit.karate.core.FeatureRuntime - classpath:users/delete/../post/post-user-snippets.feature - call by tag at line 5: Create
+`18:43:42.992 [pool-1-thread-3] ERROR com.intuit.karate - classpath:users/get/get-user.feature:9
+E* def jsonResponse = read('../../../resources/json/list_users.json')
+js failed:
+>>>>
+401: read('../../../resources/json/list_users.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\Users\pcc\pco\entrenamiento\RestApiKarate\build\resources\test\users\get\..\..\..\resources\json\list_users.json (El sistema no puede encontrar la ruta especificada)
+J- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+Z- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+Y- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+Q- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+N- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+(classpath:users/get/get-user.feature:9
+B18:43:43.393 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+%1 > POST https://reqres.in/api/users
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+"1 > Accept-Encoding: gzip,deflate
+#{"name":"Maira","job":"Developer"}
+
+B18:43:43.393 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+%1 > POST https://reqres.in/api/users
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 33
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+"1 > Accept-Encoding: gzip,deflate
+"{"name":"Charlie","job":"Doctor"}
+
+B18:43:43.393 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+%1 > POST https://reqres.in/api/users
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+"1 > Accept-Encoding: gzip,deflate
+*{"name":"Maira Alexandra","job":"Lawyer"}
+
+B18:43:43.393 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+&1 > GET https://reqres.in/api/users/7
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+"1 > Accept-Encoding: gzip,deflate
+
+
+\18:43:44.042 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 633
+1 < 200
+(1 < Date: Thu, 21 Jul 2022 23:43:44 GMT
+21 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+#1 < Access-Control-Allow-Origin: *
+.1 < Etag: W/"11c-Esb3aX7LcoAMUKcF3i6bvWwxqls"
+1 < Via: 1.1 vegur
+!1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 3253
+g1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+É1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=DQHlb6D%2FweDGKHWfFxwpdHQ2kyXXG%2FYGgvO6hZgeNt%2BX57UHyjALnk9mqnAGDft00%2FCpc839WSzaPlKaElOSJStgIfPjLTPi7Up41At17WYXcbNkwk2WD%2BYofA%3D%3D"}],"group":"cf-nel","max_age":604800}
+F1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+!1 < CF-RAY: 72e7ccedbfd28d94-MIA
+ù{"data":{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+B18:43:44.079 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+%1 > POST https://reqres.in/api/users
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 30
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+"1 > Accept-Encoding: gzip,deflate
+{"name":"Yole","job":"Degree"}
+
+\18:43:44.230 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 821
+1 < 201
+(1 < Date: Thu, 21 Jul 2022 23:43:44 GMT
+21 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 91
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+#1 < Access-Control-Allow-Origin: *
+-1 < Etag: W/"5b-DjPvHNSLCBDDL0ZO28zaB7wi2Qw"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+g1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Å1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ke6%2F0DryuDWHJK8uvHyc6ULZ782pltZXHRdaytlfLJQQ7Q%2FwZ%2FBKkojX6AlYdW5SpLlCYBjpl%2FXkP7Pkz6lnCXrFXbgdSczRcRrFU6I4mfQU8RfDrJxEhUdvMw%3D%3D"}],"group":"cf-nel","max_age":604800}
+F1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+!1 < CF-RAY: 72e7ccedbf9f8d9a-MIA
+\{"name":"Maira Alexandra","job":"Lawyer","id":"341","createdAt":"2022-07-21T23:43:44.456Z"}
+
+\18:43:44.277 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 884
+1 < 201
+(1 < Date: Thu, 21 Jul 2022 23:43:44 GMT
+21 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+#1 < Access-Control-Allow-Origin: *
+-1 < Etag: W/"54-L3N7gkJq7Rvf1XqoigwXcYt1fYA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+g1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+ˇ1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=fMxoI1LwFRta0s%2Bwnx0RRxIEmAynLbnqvmdzxoiHmjP6GlkUg5X2ccqlOuFSq9DOytlS6gWbxHWVg7FsB1kGBWoZ6n5fNZ%2B4cBl6xD2ovoc%2B9JIgRivVt74OZA%3D%3D"}],"group":"cf-nel","max_age":604800}
+F1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+!1 < CF-RAY: 72e7ccedbda72263-MIA
+U{"name":"Maira","job":"Developer","id":"856","createdAt":"2022-07-21T23:43:44.466Z"}
+
+\18:43:44.280 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 871
+1 < 201
+(1 < Date: Thu, 21 Jul 2022 23:43:44 GMT
+21 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 83
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+#1 < Access-Control-Allow-Origin: *
+-1 < Etag: W/"53-CVg2sCcq1wHJMXLPAX6NrLpAWqQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+g1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+˝1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=JaROqe%2B8LdAdqkhScXK%2BiWky4nPynDax5jKbLouVEuXysd6Ulj9u4b2o0kEId5RimkbQzY8nPBq4bVltDFvFqO2gd2rPKaVdyku8eG47wkuxhsOVGIkDhWnrgw%3D%3D"}],"group":"cf-nel","max_age":604800}
+F1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+!1 < CF-RAY: 72e7ccedce646dd1-MIA
+T{"name":"Charlie","job":"Doctor","id":"216","createdAt":"2022-07-21T23:43:44.475Z"}
+
+B18:43:44.311 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+%1 > POST https://reqres.in/api/users
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 26
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+"1 > Accept-Encoding: gzip,deflate
+{"name":"Maira Alexandra"}
+
+B18:43:44.327 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+/1 > POST https://reqres.in/api/users/api/users
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+"1 > Accept-Encoding: gzip,deflate
+#{"name":"Kevin","job":"Developer"}
+
+B18:43:44.358 [pool-1-thread-1] DEBUG com.intuit.karate - request:
++2 > DELETE https://reqres.in/api/users/341
+2 > Host: reqres.in
+2 > Connection: Keep-Alive
+82 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+"2 > Accept-Encoding: gzip,deflate
+
+
+\18:43:44.659 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 580
+1 < 201
+(1 < Date: Thu, 21 Jul 2022 23:43:44 GMT
+21 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 80
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+#1 < Access-Control-Allow-Origin: *
+-1 < Etag: W/"50-4Lml+4UZWw3/yTf1Qx+hXVXb7n0"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+g1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+˝1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tWeQVpyBPDMBv0uYfLNtOBycrFkphNFPrPYooirz9J1n2AvPrs8EUuZNGuiWJZZ%2BvJSzvqQZVP08kqs2czHE4Sv5ah8gWaVdtCGUF%2FYxe5snETtQE5lRP7x8Tg%3D%3D"}],"group":"cf-nel","max_age":604800}
+F1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+!1 < CF-RAY: 72e7ccf05c4bb3f1-MIA
+Q{"name":"Yole","job":"Degree","id":"611","createdAt":"2022-07-21T23:43:44.889Z"}
+
+B18:43:44.681 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+(1 > PUT https://reqres.in/api/users/191
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 38
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15)
+"1 > Accept-Encoding: gzip,deflate
+'{"name":"Alexa","job":"zion resident"}
+
+\18:43:44.912 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 585
+1 < 201
+(1 < Date: Thu, 21 Jul 2022 23:43:45 GMT
+21 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+#1 < Access-Control-Allow-Origin: *
+-1 < Etag: W/"54-R6ygL99axMv/ikctMj+kopKmPpY"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+g1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Ö1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EE4jEp3lC46Br4OcsL8m5QRu1QYAl3lm5zwDkH9%2BMCXk6230%2B072K5%2B6bHsP4DNJbAXMIoD1cimHiSXOPcuq98hXkIsWQNjRaQe2MKT7c%2F%2F83WM%2FbhIOg5Vq4g%3D%3D"}],"group":"cf-nel","max_age":604800}
+F1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+!1 < CF-RAY: 72e7ccf1da758daf-MIA
+U{"name":"Kevin","job":"Developer","id":"259","createdAt":"2022-07-21T23:43:45.133Z"}
+
+\18:43:44.928 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 617
+1 < 201
+(1 < Date: Thu, 21 Jul 2022 23:43:45 GMT
+21 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 76
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+#1 < Access-Control-Allow-Origin: *
+-1 < Etag: W/"4c-5iTjGSMnA+mF/PDfmWG6UlJFseo"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+g1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+˝1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=NCAKy2lqZRTLHhpOIETXLtHtg34FOrIoLwSo%2BRsZDbCYGlkwmeNJcRbBst2KcnKLuYkOhetSm8vOjIH6v00a55QdKgoqIESeTkDNfIt7zkaxZ32Vt8tpo%2BjFIA%3D%3D"}],"group":"cf-nel","max_age":604800}
+F1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+!1 < CF-RAY: 72e7ccf20fa29ae5-MIA
+M{"name":"Maira Alexandra","id":"621","createdAt":"2022-07-21T23:43:45.149Z"}
+
+\18:43:44.928 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 570
+2 < 204
+(2 < Date: Thu, 21 Jul 2022 23:43:45 GMT
+2 < Content-Length: 0
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+#2 < Access-Control-Allow-Origin: *
+,2 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+g2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Å2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nyIaa4O1RXGZpiHwxJEACCxSxQKdtawF%2B%2BbtnAedU5iotyxIrCG9Ren1HHGMj79z3H4iCzwnltHLQqOk6rfjGyd%2BOBzonPR6auxceLKztmqoflovGjZbiby7%2BQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+F2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+!2 < CF-RAY: 72e7ccf208a40a22-MIA
+
+
+\18:43:45.529 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 848
+1 < 200
+(1 < Date: Thu, 21 Jul 2022 23:43:45 GMT
+21 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+#1 < Access-Control-Allow-Origin: *
+-1 < Etag: W/"4d-4kyT3x39+yInujln+uYMQNozId4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+g1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+˝1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=zfpoubeAtdC4JindTWNnyPBpzSZTVoELXAvcGdnMaOWwPJ%2FhB07YYpU7Ob%2Fm5cj6USevEhhNH60qVti7PArHNF2148xuIuTzYzdvRGwS58WCIALZhVnaFxuMcQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+F1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+!1 < CF-RAY: 72e7ccf5bcb6370e-MIA
+N{"name":"Alexa","job":"zion resident","updatedAt":"2022-07-21T23:43:45.752Z"}
+
+:---------------------------------------------------------
+4feature: classpath:users/delete/delete-user.feature
+7scenarios:  1 | passed:  1 | failed:  0 | time: 2,0241
+:---------------------------------------------------------
+
+ë18:43:46.225 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 5 (4 remaining) classpath:users/delete/delete-user.feature
+:---------------------------------------------------------
+.feature: classpath:users/get/get-user.feature
+7scenarios:  2 | passed:  1 | failed:  1 | time: 1,2102
+:---------------------------------------------------------
+
+ã18:43:46.341 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 5 (3 remaining) classpath:users/get/get-user.feature
+:---------------------------------------------------------
+0feature: classpath:users/post/post-user.feature
+7scenarios:  5 | passed:  5 | failed:  0 | time: 4,4809
+:---------------------------------------------------------
+
+ç18:43:46.599 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 5 (1 remaining) classpath:users/post/post-user.feature
+:---------------------------------------------------------
+.feature: classpath:users/put/put-user.feature
+7scenarios:  1 | passed:  1 | failed:  0 | time: 0,8544
+:---------------------------------------------------------
+
+ã18:43:46.660 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:users/put/put-user.feature
+Karate version: 1.2.0
+8======================================================
+6elapsed:   6,64 | threads:    4 | thread time: 8,57 
+4features:     4 | skipped:    1 | efficiency: 0,32
+-scenarios:    9 | passed:     8 | failed: 1
+8======================================================
+>>> failed features:
+js failed:
+>>>>
+401: read('../../../resources/json/list_users.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\Users\pcc\pco\entrenamiento\RestApiKarate\build\resources\test\users\get\..\..\..\resources\json\list_users.json (El sistema no puede encontrar la ruta especificada)
+J- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+Z- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+Y- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+Q- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+N- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+(classpath:users/get/get-user.feature:9
+<<<
+
+BHTML report: (paste into browser to view) | Karate version: 1.2.0
+^file:///C:/Users/pcc/pco/entrenamiento/RestApiKarate/build/karate-reports/karate-summary.html
+D===================================================================
+
+ Tjul. 21, 2022 6:43:47 P. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+ ÇINFO: File 'C:\Users\pcc\pco\entrenamiento\RestApiKarate\build\karate-reports\users.delete.delete-user.json' contains 1 features
+ Tjul. 21, 2022 6:43:47 P. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+ |INFO: File 'C:\Users\pcc\pco\entrenamiento\RestApiKarate\build\karate-reports\users.get.get-user.json' contains 1 features
+ Tjul. 21, 2022 6:43:47 P. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+ ~INFO: File 'C:\Users\pcc\pco\entrenamiento\RestApiKarate\build\karate-reports\users.post.post-user.json' contains 1 features
+ Tjul. 21, 2022 6:43:47 P. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+ |INFO: File 'C:\Users\pcc\pco\entrenamiento\RestApiKarate\build\karate-reports\users.put.put-user.json' contains 1 features
